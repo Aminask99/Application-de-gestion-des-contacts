@@ -46,9 +46,17 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .bgJ{
+        background-color: #bae0f7;
+}
+      .babt{
+    padding-left: 80px;
+}
+    </style>
 </head>
 
-<body>
+<body class="bgJ">
     <section>
 
         <nav class="navbar navbar-light Naav">
@@ -73,10 +81,10 @@
                             <h1 class="p-4">Welcome, <span class="user"> <?php echo  $user; ?> </span></h1>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Your Profil :</li>
-                                <li class="list-group-item fw-bolder">Username : <label class="fw-normal ms-5">
+                                <li class="list-group-item fw-bolder">Username : <label class=" babt fw-normal ms-5">
                                         <?php echo  $user; ?> </label></li>
-                                <li class="list-group-item fw-bolder">Signup date : <label
-                                        class="fw-normal ms-5"><?php echo $date;?> </label></li>
+                                <li class="list-group-item fw-bolder">Signup date : <label class=" fw-normal ms-5">
+                                       <?php echo $date;?> </label></li>
                                 <li class="list-group-item fw-bolder">Last login : <label class="fw-normal ms-5">
                                         <?php echo $currentDate; ?> </label></li>
                             </ul>

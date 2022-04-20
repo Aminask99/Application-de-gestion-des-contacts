@@ -49,7 +49,7 @@
           ">
                         <div class="card-body p-5 shadow-5 text-center">
                             <h2 class="fw-bold mb-5">Sign up now</h2>
-                            <form method="POST" action="">
+                            <form method="POST" action="" id="form" name="NomForm">
 
                                 <div class="d-flex align-items-center mb-3 pb-1">
                                     <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
@@ -57,18 +57,18 @@
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <input type="" id="form2Example17" name="Username"
+                                    <input type="" id="form2Example17" id="Username" name="Username"
                                         class="form-control form-control-lg" />
                                     <label class="form-label" for="form2Example17">Username</label>
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <input type="password" id="form2Example27" name="Password"
+                                    <input type="password" id="form2Example27" id="Password" name="Password"
                                         class="form-control form-control-lg" />
                                     <label class="form-label" for="form2Example27">Password</label>
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <input type="password" id="form2Example27" name="Password_verify"
+                                    <input type="password" id="form2Example27" id ="Password_verify"name="Password_verify"
                                         class="form-control form-control-lg" />
                                     <label class="form-label" for="form2Example27">Password_verify</label>
                                 </div>
@@ -89,11 +89,12 @@
                 </div>
 
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img class="imGe" src="1_h4TLlisFk7XvtREAsS7C7Q.jpeg" class="rounded-4 shadow-4" alt="" />
+                    <img class="imGe" src="image.jpeg" class="rounded-4 shadow-4" alt="" />
                 </div>
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

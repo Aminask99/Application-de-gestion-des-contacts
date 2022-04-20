@@ -21,12 +21,12 @@
                                                 // CONSTRUCTOR 
                                             function __construct($name, $pass,$passv) {
                                                     //  this /self 
-                                                    $this->Username = $name;  //had shy ly fy const hwa ly at affiktih fy dakshy ly fy lclass
+                                                    $this->Username = $name;  
                                                     $this->Password = $pass;
                                                     $this->Password_verify = $passv;
                                                 }
                                             }
-                                        //  ----------------------------------------- signup -----------------------------------------------
+                                        //  ---------------------------------------------------- signup ----------------------------------------------------
 
                                                  // require 'cnx.php';
                                                 if(isset($_POST['Sign_Up'])){
@@ -34,6 +34,7 @@
                                                     $Username=$_POST['Username'];
                                                     $Password=$_POST['Password'];
                                                     $Password_verify=$_POST['Password_verify'];
+                                                    
                                                     // INSTANCIATION 
                                                     $test = new login($Username,$Password,$Password_verify);
                                                     $user=$test ->Username;
@@ -48,7 +49,7 @@
                                                     header("location: Login.php");
                                                     die();
                                                 }
-                                        // ------------------------------------------- sign in --------------------------------------------
+                                        // --------------------------------------------------- sign in -------------------------------------------------------
 
 
                                                 if(isset($_POST['Login'])) {
@@ -87,7 +88,7 @@
                                                 
                                                 }
                                            
-                                        // <!-- -----------------------------------------Contact-------------------------------------------->
+                                        // <!-- ------------------------------------------------ Contact ---------------------------------------------------->
 
 
 
@@ -100,7 +101,7 @@
                                                 // CONSTRUCTOR 
                                             function __construct($Name, $Phon,$email,$address) {
                                                     //  this /self 
-                                                    $this->name = $Name;  //had shy ly fy const hwa ly at affiktih fy dakshy ly fy lclass
+                                                    $this->name = $Name;  
                                                     $this->phoone = $Phon;
                                                     $this->emaill = $email;
                                                     $this->Addresss = $address;
@@ -114,6 +115,7 @@
                                                     $Phone=$_POST['Phone'];
                                                     $Email=$_POST['Email'];
                                                     $Address=$_POST['Address'];
+
                                                      // INSTANCIATION 
                                                     $tes = new contac($name,$Phone,$Email,$Address);
                                                     $Name=$tes->name;
@@ -126,25 +128,9 @@
                                                     header('Contact.php');
                                                 }
                         
-                                        //    <!-- --------------------------------- update -------------------------------->
+                                        //    <!-- -------------------------------------------- update ----------------------------------------------->
 
 
-
-                                            class cont {
-                                                        // Properties (modificateur d'acces : public , private , proteted (héritage) )
-                                                    public $name;
-                                                    public $Phone;
-                                                    public $Email;
-                                                    public $Address;
-                                                     // CONSTRUCTOR 
-                                            function __construct($Name, $Phon,$email,$address) {
-                                                 //  this /self 
-                                                    $this->name = $Name;  //had shy ly fy const hwa ly at affiktih fy dakshy ly fy lclass
-                                                    $this->phoone = $Phon;
-                                                    $this->emaill = $email;
-                                                    $this->Addresss = $address;
-                                                        }
-                                            }
                                                 if(isset($_GET["id"])) {
                                                                     
                                                         
@@ -158,7 +144,8 @@
                                                     $Email=$_POST['Email'];
                                                     $Address=$_POST['Address'];
 
-                                                    $tes = new cont($name,$Phone,$Email,$Address);
+                                                   // INSTANCIATION 
+                                                    $tes = new contac($name,$Phone,$Email,$Address);
                                                     $Name=$tes->name;
                                                     $Phon=$tes->Phone;
                                                     $email=$tes->Email;

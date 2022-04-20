@@ -180,7 +180,7 @@
             </form>
         </div>
  </div>
-    <script src="script.js"></script>
+    <script src="jsScript.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
         let uri = location.href
